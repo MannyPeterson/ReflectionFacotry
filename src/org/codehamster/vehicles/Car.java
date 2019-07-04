@@ -15,24 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>
  */
-package org.codehamster;
+package org.codehamster.vehicles;
 
-public class VehicleExample {
-	public static void main(String[] args) {
-		VehicleFactory vehicleFactory = new VehicleFactory("org.codehamster.vehicles");
+import org.codehamster.Vehicle;
 
-		Vehicle vehicleOne = vehicleFactory.getVehcile("boat");
-		Vehicle vehicleTwo = vehicleFactory.getVehcile("train");
-		Vehicle vehicleThree = vehicleFactory.getVehcile("truck");
-		Vehicle vehicleFour = vehicleFactory.getVehcile("airplane");
-		Vehicle vehicleFive = vehicleFactory.getVehcile("car");
-		
-		System.out.println(vehicleOne);
-		System.out.println(vehicleTwo);
-		System.out.println(vehicleThree);
-		System.out.println(vehicleFour);
-		System.out.println(vehicleFive);
-		
-		return;
+public class Car extends Vehicle {
+	public Car() {
+		super("car");
 	}
 }
