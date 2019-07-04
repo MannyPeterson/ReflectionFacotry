@@ -32,11 +32,11 @@ public class VehicleExample {
 		 * Call the getVehicle() method with the identifier ("name")
 		 * of the class to create a new instance of.
 		 */
-		Vehicle vehicleOne = vehicleFactory.getVehcile("boat");
-		Vehicle vehicleTwo = vehicleFactory.getVehcile("train");
-		Vehicle vehicleThree = vehicleFactory.getVehcile("truck");
-		Vehicle vehicleFour = vehicleFactory.getVehcile("airplane");
-		Vehicle vehicleFive = vehicleFactory.getVehcile("car");
+		Vehicle vehicleOne = vehicleFactory.getVehicle("boat");
+		Vehicle vehicleTwo = vehicleFactory.getVehicle("train");
+		Vehicle vehicleThree = vehicleFactory.getVehicle("truck");
+		Vehicle vehicleFour = vehicleFactory.getVehicle("airplane");
+		Vehicle vehicleFive = vehicleFactory.getVehicle("car");
 		
 		/* 
 		 * Call each of the new classes with the println() method

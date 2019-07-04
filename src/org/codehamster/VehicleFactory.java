@@ -83,7 +83,7 @@ public class VehicleFactory {
 		}
 	}
 
-	public Vehicle getVehcile(String name) {
+	public Vehicle getVehicle(String name) {
 		try {
 			return (Vehicle) Class.forName(this.registations.get(name)).getConstructor().newInstance();
 		} catch (Exception e) {

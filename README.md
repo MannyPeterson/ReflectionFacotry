@@ -1,6 +1,6 @@
 Java Reflection Factory Example
 ======
-The **Jave Reflection Factory Example** is an example of how reflection may be used in a factory to allow applications to be extended without updates to the core application source code as required by most factory patterns. Currently scanning JAR files is unsupported. Also, the class scanner does not scan below the packageName - this is intentional and the behavior of the class scanner can be easily adapted to recurse the directories.
+The **Jave Reflection Factory Example** is an example of how reflection may be used in a factory to allow applications to be extended (think add-ons, plug-ins and user contributed content in games) without the need to update core application source code as required by many factory design patterns. Currently scanning JAR files is unsupported. Also, the class scanner does not scan below the packageName - this is intentional and the behavior of the class scanner can be easily adapted to recurse the directories.
 
 ## Usage
 ```java
@@ -17,11 +17,11 @@ VehicleFactory vehicleFactory = new VehicleFactory("org.codehamster.vehicles");
  * Call the getVehicle() method with the identifier ("name")
  * of the class to create a new instance of.
  */
-Vehicle vehicleOne = vehicleFactory.getVehcile("boat");
-Vehicle vehicleTwo = vehicleFactory.getVehcile("train");
-Vehicle vehicleThree = vehicleFactory.getVehcile("truck");
-Vehicle vehicleFour = vehicleFactory.getVehcile("airplane");
-Vehicle vehicleFive = vehicleFactory.getVehcile("car");
+Vehicle vehicleOne = vehicleFactory.getVehicle("boat");
+Vehicle vehicleTwo = vehicleFactory.getVehicle("train");
+Vehicle vehicleThree = vehicleFactory.getVehicle("truck");
+Vehicle vehicleFour = vehicleFactory.getVehicle("airplane");
+Vehicle vehicleFive = vehicleFactory.getVehicle("car");
 
 /* 
  * Call each of the new classes with the println() method
