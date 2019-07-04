@@ -19,14 +19,30 @@ package org.codehamster;
 
 public class VehicleExample {
 	public static void main(String[] args) {
+		/* 
+		 * Create a new instance of the reflection factory by 
+		 * passing the package name to the constructor. The class
+		 * scanner will look in this package for classes. All of the
+		 * classes in this package must share the same superclass -
+		 * Vehicle in this case.
+		 */
 		VehicleFactory vehicleFactory = new VehicleFactory("org.codehamster.vehicles");
 
+		/* 
+		 * Call the getVehicle() method with the identifier ("name")
+		 * of the class to create a new instance of.
+		 */
 		Vehicle vehicleOne = vehicleFactory.getVehcile("boat");
 		Vehicle vehicleTwo = vehicleFactory.getVehcile("train");
 		Vehicle vehicleThree = vehicleFactory.getVehcile("truck");
 		Vehicle vehicleFour = vehicleFactory.getVehcile("airplane");
 		Vehicle vehicleFive = vehicleFactory.getVehcile("car");
 		
+		/* 
+		 * Call each of the new classes with the println() method
+		 * to invoke the toString() method and verify the output
+		 * is correct.
+		 */
 		System.out.println(vehicleOne);
 		System.out.println(vehicleTwo);
 		System.out.println(vehicleThree);
