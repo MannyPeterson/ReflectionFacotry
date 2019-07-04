@@ -20,7 +20,7 @@ package org.codehamster;
 public class VehicleExample {
 	public static void main(String[] args) {
 		VehicleFactory vehicleFactory = new VehicleFactory("org.codehamster.vehicles");
-		// create the vehicles
+
 		Vehicle vehicleOne = vehicleFactory.getVehcile("boat");
 		Vehicle vehicleTwo = vehicleFactory.getVehcile("train");
 		Vehicle vehicleThree = vehicleFactory.getVehcile("truck");
