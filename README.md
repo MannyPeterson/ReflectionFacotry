@@ -3,7 +3,7 @@ Java Reflection Factory Example
 The **Jave Reflection Factory Example** is an example of how reflection may be used in a factory to allow applications to be extended without updates to the core application source code as required by most factory patterns. Currently scanning JAR files is unsupported. Also, the class scanner does not scan below the packageName - this is intentional and the behavior of the class scanner can be easily adapted to recurse the directories.
 
 ## Usage
-```
+```java
 /* 
  * Create a new instance of the reflection factory by 
  * passing the package name to the constructor. The class
