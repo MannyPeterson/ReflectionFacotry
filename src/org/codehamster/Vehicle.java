@@ -17,6 +17,8 @@
  */
 package org.codehamster;
 
+/* ignore this */
+
 public abstract class Vehicle {
 	private String name;
 
